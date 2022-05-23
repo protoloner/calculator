@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title> Calculator </title>
+
+<style>
+
+
+#clear{
+width: 270px;
+border: 3px solid gray;
+	border-radius: 3px;
+	padding: 20px;
+	background-color: whitesmoke;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 220px;
+}
+
+.cal-c
+{
+width: 300px;
+height: 530px;
+margin: auto;
+border: 3px solid black;
+outline-width: 5px;
+outline-style: groove;
+outline-color: black;
+border-radius: 20px;
+padding: 20px;
+}
+
+
+
+input
+{
+width: 20px;
+background-color: whitesmoke;
+color: black;
+border: 3px solid gray;
+	border-radius: 15px;
+	padding: 25px;
+	margin: 5px;
+	font-size: 15px;
+}
+
+
+#result{
+width: 230px;
+border: 5px solid grey;
+	border-radius: 15px;
+	padding: 20px;
+	margin: auto;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class= "cal-c">
+<form name = "calc">
+	
+
+  <input id = "result" type ="text" name = "result"> <br> <br>
+  
+  <input type = "button" value = "1" onclick = "calc.result.value += '1' ">
+  <input type = "button" value = "2" onclick = "calc.result.value += '2' ">
+  <input type = "button" value = "3" onclick = "calc.result.value += '3' ">
+   <input type = "button" value = "+" onclick = "calc.result.value += '+' ">
+  <br> <br>
+  
+  <input type = "button" value = "4" onclick = "calc.result.value += '4' ">
+  <input type = "button" value = "5" onclick = "calc.result.value += '5' ">
+  <input type = "button" value = "6" onclick = "calc.result.value += '6' ">
+  <input type = "button" value = "-" onclick = "calc.result.value += '-' ">
+  <br> <br>
+  
+  <input type = "button" value = "7" onclick = "calc.result.value += '7' ">
+  <input type = "button" value = "8" onclick = "calc.result.value += '8' ">
+  <input type = "button" value = "9" onclick = "calc.result.value += '9' ">
+  <input type = "button" value = "*" onclick = "calc.result.value += '*' ">
+  <br> <br>
+  
+  
+  <input type = "button" value = "/" onclick = "calc.result.value += '/' ">
+  <input type = "button" value = "0" onclick = "calc.result.value += '0' ">
+    <input type = "button" value = "." onclick = "calc.result.value += '.' ">
+	
+  <input type = "button" value = "=" onclick = "calc.result.value = eval(calc.result.value) ">
+  <br> 
+  
+  <input type = "button" value = "Clear All" onclick = "calc.result.value = ' ' " id= "clear" >
+  <br> 
+  
+</form>
+</div>
+</body>
+</html>
+
+ 
